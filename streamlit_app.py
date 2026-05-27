@@ -187,7 +187,7 @@ elif page == "Schedule":
     st.subheader("Schedule Comparison")
     
     now_idx = 12
-    time_index_sched = pd.date_range("2026-01-01", periods=24, freq="H")
+    time_index_sched = pd.date_range("2026-01-01", periods=24, freq="h")
     ref_schedule = np.random.uniform(50, 150, 24)
     opt_schedule = ref_schedule * np.random.uniform(0.5, 1.5, 24)
     
