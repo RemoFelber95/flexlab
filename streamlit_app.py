@@ -63,7 +63,7 @@ page = st.sidebar.radio(
 # DUMMY DATA
 # ---------------------------------------------------
 
-time_index = pd.date_range("2026-01-01", periods=24, freq="H")
+time_index = pd.date_range("2026-01-01", periods=24, freq="h")
 
 DayAhead = np.random.uniform(80, 220, 24)
 AncServicesPower = np.random.uniform(20, 60, 24)
