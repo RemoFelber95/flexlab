@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 def figure_with_forecast(ubound, lbound, title, xtitle, ytitle, label,colorplot):
     now_idx = 12  # "now" at 12:00
-    time_index = pd.date_range("2026-01-01", periods=24, freq="H")
+    time_index = pd.date_range("2026-01-01", periods=24, freq="h")
     # Calculate uncertainty with power of 0.5 for future values
     measerument = np.random.uniform(lbound, ubound, 24)
     uncertainty_upper = np.zeros(24)
